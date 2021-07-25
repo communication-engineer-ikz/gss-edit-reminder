@@ -54,6 +54,6 @@ function onEdit(e) {
             }
         }
 
-        return consoleLog(mapNo, area, staff, status);
+        return editRemind(mapNo, area, staff, status);
     }
 }

@@ -32,7 +32,7 @@ function needRemind(activeCellColumn, oldValue) {
     }
 }
 
-function consoleLog(mapNo, area, staff, status) {
+function editRemind(mapNo, area, staff, status) {
 
     console.log("通知対象: " + "\n"
         + "---------" + "\n"
@@ -42,4 +42,18 @@ function consoleLog(mapNo, area, staff, status) {
         + "status: " + status + "\n"
         + "---------"
     );
+
+    /* 参考
+        https://qiita.com/nakagawa1017/items/8b966af00fe271ff05fb
+    */
+    const message = ("以下の物品のステータスが変更されました: " + "\\n"
+            + "---------" + "\\n"
+            + "mapNo: " + mapNo + "\\n"
+            + "area: " + area + "\\n"
+            + "staff: " + staff + "\\n"
+            + "status: " + status + "\\n"
+            + "---------"
+        );
+
+    return Browser.msgBox(message, Browser.Buttons.OK);
 }
