@@ -1,0 +1,9 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "urlFetchWhitelist": ["https://hooks.slack.com/"],
+  "oauthScopes": ["https://www.googleapis.com/auth/script.scriptapp","https://www.googleapis.com/auth/script.external_request"],
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
